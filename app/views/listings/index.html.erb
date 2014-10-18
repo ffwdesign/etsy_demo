@@ -7,7 +7,7 @@
           <div class="caption">
             <h2><%= listing.name %></h2>
             <%= number_to_currency(listing.price) %><br>
-            
+            <%= "Sold by #{listing.user.name}" %><br><br>
             <%= link_to 'Show', listing, class: "btn btn-link" %>
             <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %>
             <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Tem certeza?' }, class: "btn btn-link" %>
