@@ -17,7 +17,7 @@
       <li><%= link_to "Sobre", pages_about_path %></li>
       <li><%= link_to "Contato", pages_contact_path %></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right ">
+      <ul class="nav navbar-nav navbar-right padding-right">
       <% if user_signed_in? %>
         <li><%= link_to "Minhas Listas", seller_path %></li>
         <li><%= link_to "Meu Perfil", edit_user_registration_path %></li>
