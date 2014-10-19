@@ -15,7 +15,9 @@
           
               <div class="caption">
                 <h2><%= listing.name %></h2>
+                <div class="price">
                 <%= number_to_currency(listing.price) %><br>
+                </div>
                 <p><%= "Oferecido por #{listing.user.name}" %></p><br><br>
               </div>
           </div>
