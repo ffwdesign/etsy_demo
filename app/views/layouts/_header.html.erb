@@ -19,9 +19,22 @@
       </ul>
       <ul class="nav navbar-nav navbar-right padding-right">
       <% if user_signed_in? %>
-        <li><%= link_to "Minhas Listas", seller_path %></li>
-        <li><%= link_to "Meu Perfil", edit_user_registration_path %></li>
-        <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Minhas Atividades<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Minhas Listas", seller_path %></li>
+            <li><%= link_to "Minhas Compras", purchases_path %></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.name %><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Minhas Vendas", sales_path %></li>
+            <li><%= link_to "Meu Perfil", edit_user_registration_path %></li>
+            <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </li>
       <% else %>
       <li ><%= link_to "Cadastrar", new_user_registration_path %></li>
       <li class="padding-right"><%= link_to "Entrar", new_user_session_path %></li>
