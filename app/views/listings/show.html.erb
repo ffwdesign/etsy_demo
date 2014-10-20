@@ -9,7 +9,8 @@
 		<h2><%= @listing.name %></h2>
 		<h3><%= number_to_currency(@listing.price) %></h3>
 		<br>
-		<p><%= @listing.description %></p>
+		<p><%= @listing.description %></p><br>
+		<%= link_to 'Compre agora!', new_listing_order_path(@listing), class: "btn btn-success" %>
 	</div>
 </div>
 
