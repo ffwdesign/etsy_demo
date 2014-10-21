@@ -1,17 +1,14 @@
-<div class="jumbotron">
-  <h1>O melhor lugar para encontrar produtos exclusivos!</h1>
-</div>
-    
 
-<div class="container">
+  
 
-<div class="my-container">
   <div class="row">
-    <div class="center">
-      <% @listings.each do |listing| %>
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <%= link_to image_tag(listing.image.url), listing %>
+
+    <div class="my-container">
+      <div class="center">
+        <% @listings.each do |listing| %>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <%= link_to image_tag(listing.image.url), listing %>
           
               <div class="caption">
                 <h2><%= listing.name %></h2>
@@ -31,5 +28,4 @@
   <%= link_to 'Novo Item', new_listing_path, class: "btn btn-success" %>
 <% end %>
 
-</div>
 </div>

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>EtsyDemo</title>
+  <title>exclusividARTE</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400italic|Shadows+Into+Light' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <%= render '/layouts/header' %>
 
+
+<div class="wraper">
 <div class="container">
 
   <% flash.each do |name, msg| %>
@@ -27,4 +31,5 @@
 </div>
 
 </body>
+</div>
 </html>

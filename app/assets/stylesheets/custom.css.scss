@@ -1,23 +1,20 @@
 @import "bootstrap";
 
-body {
+.wraper {
 	
-	background-color: #F5F5F1;
-	color: #333333;
-	padding-top: 100px;
 }
 
-.navbar-default {
-	background-color: #637c9b;
+body {
+	background-color: #ffeed6;
 }
 
-.navbar-default .navbar-brand {
+.navbar-inverse .navbar-brand {
 	color: #ffd400;
 	font-size: 34px;
 
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a {
 	color: #ebf2f4;
 	font-size: 18px;
 }
@@ -43,7 +40,6 @@ body {
 }
 
 
-
 .padding-right {
 	padding-right: 30px;
 }
@@ -52,16 +48,19 @@ body {
 	color: #fff;
 }
 
-.jumbotron {
-	background-image: url('https://www.dropbox.com/s/y9otc4771q5kbdp/jumbo.jpg?raw=1');
-	height: 350px;
-	color: #fff;
-	text-shadow: 2px 2px #1c1616;
+
+.price {
+	color: #34bc25;
+}
+
+.my-brand {
+	font-family: "Arvo", Serif;
 
 }
 
-.price {
-	color: #74e035;
+.my-container {
+	margin-top: 80px;
+	background-color: #fff0d1;
 }
 
 
