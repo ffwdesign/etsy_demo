@@ -54,6 +54,8 @@
 
 <div class="row>">
 <br><br>
+<%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
+<br><br>
 <% if (user_signed_in?) %>
   <%= link_to 'Novo Item', new_listing_path, class: "btn btn-success" %>
 <% end %>
