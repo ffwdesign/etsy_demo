@@ -14,8 +14,10 @@
 	</div>
 </div>
 
+<div class="row">
 <% if current_user == @listing.user %>
 	<%= link_to 'Editar', edit_listing_path(@listing), class: "btn btn-link" %> |
 <% end %>
 
 <%= link_to 'Voltar', listings_path, class: "btn btn-link" %>
+</div>
