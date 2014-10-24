@@ -18,6 +18,7 @@ gem "figaro"
 gem 'devise'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
+gem 'cielo'
 
 group :production do
 	gem 'pg'
