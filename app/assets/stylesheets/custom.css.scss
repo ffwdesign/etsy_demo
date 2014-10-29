@@ -1,8 +1,16 @@
 @import "bootstrap";
 
+html { 
+
 .wraper {
-	padding-top: 60px;
-	background-color: #ffeed6;
+	padding-top: 100px;
+	  background: url('https://www.dropbox.com/s/gh3reuug901ejmq/school.png?raw=1') repeat; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: auto, cover;
+}
+	
 }
 
 body {
@@ -26,12 +34,14 @@ body {
 .navbar-inverse .navbar-brand {
 	color: #ffd400;
 	font-size: 34px;
+	padding: 30px;
 
 }
 
 .navbar-inverse .navbar-nav > li > a {
 	color: #ebf2f4;
 	font-size: 18px;
+	padding: 30px;
 }
 
 .center {
@@ -75,7 +85,7 @@ body {
 
 .my-container {
 	margin-top: 80px;
-	background-color: #fff0d1;
+	background-image: url ('https://www.dropbox.com/s/gh3reuug901ejmq/school.png?raw=1');
 }
 
 
@@ -102,7 +112,7 @@ body {
     height: 400px !important;
 }
 .carousel{
-    margin-top: 20px;
+    
     width: 100%;
     height: 400
 }
@@ -110,6 +120,24 @@ body {
 	margin: 20px;
 	width: 100%;
 }
+
+.jumbotron {
+	min-height: 200px;
+	background-color: #3a321f;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+
+.jumbotron h3 {
+	font-family: indie flower, seriff;
+	font-size: 30px;
+}
+
+
+
+
 
 
 
